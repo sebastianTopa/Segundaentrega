@@ -1,0 +1,260 @@
+/* reset */ 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ /* estilos del body */
+
+body{
+    background-color: white;
+}
+
+
+header{
+    padding: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+background-color: #FAD8CE;
+display: inline-block;
+padding: 10px;
+border-radius: 300px;
+}
+
+
+/* estilos del main */
+
+
+.main-index{
+     text-align: center;
+}
+
+
+main h1{
+    text-align: center;
+    margin: 10px;
+    color: rgb(196, 174, 218);
+    font-size: 50px;
+}
+
+main p{
+    text-align: start;
+    font-size: 20px;
+}
+
+.img-camp{
+    padding: 10px;
+    width: 300px;
+}
+
+.img-fogata{
+    padding: 0;
+    width: 200px;
+}
+
+main section img{
+    padding: 5px;
+    width: 50%;
+}
+
+ /* estilos de footer */
+
+footer{
+    text-align: center;
+    background-color: blueviolet;
+}
+
+footer h2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+footer ul li img{
+    display: block;
+}
+
+
+
+/* body de actividades */
+
+body{
+    background-color: white;
+}
+
+ /* estilos del main acitvidades */
+
+
+.h1-actividades{
+    color: blueviolet;
+}
+
+.campamento-nenes{
+    width: 25%;
+}
+
+ /* estilos del main de contactos */
+
+.h1contacto{
+    text-align: start;
+    margin-top: 2px;
+}
+
+.pcontacto{
+    text-align: start;
+    color: darkcyan;
+    display: inline;
+}
+
+form{
+    background-color: cadetblue;
+}
+
+/* main de nosotros */
+
+.contenedorgrid{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1sobrenosotros{
+    font-size: 50px
+}
+
+.boxmodeling{
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid blueviolet;
+    padding: 50px;
+    margin: 20px;
+}
+
+.boxmodeling2{
+    background-color: yellowgreen;
+    width: 300px;
+    border: 15px solid green;
+    padding: 30px;
+    margin: 10px;
+}
+
+.boxmodeling3{
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid blueviolet;
+    padding: 50px;
+    margin: 20px;
+}
+
+.boxmodeling4{
+    background-color: yellowgreen;
+    width: 300px;
+    border: 15px solid green;
+    padding: 30px;
+    margin: 10px;
+}
+
+/* main de nuestra historiaa */
+
+.cabaña{
+    width: 500px;
+}
+
+.h1nuestrahistoria{
+background-color: tomato;
+color: black;
+border-radius: 100px;
+}
+
+.p1{
+    background-color: tomato;
+}
+
+.p2{
+    background-color: tomato;
+}
+
+.campamentoviejo{
+    width: 30%;
+}
+
+/* mq */
+
+@media screen and (min-width: 480px){
+    /* estilos de header */
+   header{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+header nav ul{
+ list-style: none;
+ display: flex;
+ gap: 1.3rem;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+    header nav ul li{
+        transition: 5s;
+    }
+
+    header nav ul li:hover{
+        background-color: #182941;
+        transform: 
+        scale(0.9)
+        rotate(360deg);
+        box-shadow: 2px 2px 5px black;
+        transition: 3s;
+    }
+
+    .divtransform{
+        animation-name: img-camp;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes img-camp{
+        0%{
+           transform: scale(1);
+        }
+
+        100%{
+            transform: scale(1.2);
+        }
+    }
+}
